@@ -116,6 +116,23 @@
 
 
 
+    },
+    "AlertsFramesAndWindows":{
+        "alertsFramesAndWindows":{
+            "selector":"//div[@class='header-text' and contains(text(),'Alerts, Frame & Windows')]" 
+        },
+        "browserWindows":{
+            "selector":"//li[@id='item-0']//span[contains(text(),'Browser Windows')]"
+        },
+        "newTab":{
+            "selector":"//*[@id='tabButton']"
+
+        },
+        "newWindow":{
+            "selector":"//*[@id='windowButton']"
+        }
+
     }
+        
     
 }
