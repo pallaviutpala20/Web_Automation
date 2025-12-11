@@ -1,0 +1,121 @@
+{
+    "WebElements":{
+        "Elements":{
+        "selector":"//div[@class='card-body']/h5[contains(text(),'Elements')]"
+    },
+    "textBox":{
+        "selector":"//*[@id='item-0']//span[contains(text(),'Text Box')]"
+    },
+    "firstName":{
+        "selector":"//*[@id='userName']"
+
+    },
+    "Email":{
+        "selector":"//*[@id='userEmail']"
+    },
+    "currentAddress":{
+        "selector":"//*[@id='currentAddress']"
+    },
+    "permanentAddress":{
+        "selector":"//*[@id='permanentAddress']"
+    },
+    "submitBtn":{
+        "selector":"//*[@id='submit']"
+    },
+    "output":{
+        "selector":"//*[@id='output']"
+    },
+    "checkBoxes":{
+        "selector":"//*[@id='item-1']//span[contains(text(),'Check Box')]"
+    },
+    "homecheckbox":{
+        "selector":"//label[@for='tree-node-home']//following-sibling::span[@class='rct-checkbox']"
+    },
+    "expandHomeButton":{
+        "selector":"//button[@aria-label='Toggle']"
+    },
+    "desktopCheckBox":{
+        "selector":"//label[@for='tree-node-desktop']//following-sibling::span[@class='rct-checkbox']"
+    },
+    "documentsCheckBox":{
+        "selector":"//label[@for='tree-node-documents']//following-sibling::span[@class='rct-checkbox']"
+    },
+    "downloadsCheckBox":{
+        "selector":"//label[@for='tree-node-downloads']//following-sibling::span[@class='rct-checkbox']"
+    },
+    "radioButtons":{
+        "selector":"//*[@id='item-2']//span[contains(text(),'Radio Button')]"
+    },
+    "yesRadioButton":{
+        "selector":"//label[@for='yesRadio']"
+    },
+    "impressiveRadioButton":{
+        "selector":"//label[@for='impressiveRadio']"
+    },
+    "noRadioButton":{
+        "selector":"//label[@for='noRadio']"
+
+    },
+    "webTables":{
+        "selector":"//*[@id='item-3']//span[contains(text(),'Web Tables')]"
+    },
+    "addData":{
+        "selector":"//*[@id='addNewRecordButton']"
+    },
+    "rf_FirstName":{
+        "selector":"//*[@id='firstName']"
+    },
+    "rf_LastName":{
+        "selector":"//*[@id='lastName']"
+    },
+    "rf_Email":{
+        "selector":"//*[@id='userEmail']"
+    },
+    "rf_Age":{
+        "selector":"//*[@id='age']"
+    },
+    "rf_salary":{
+        "selector":"//*[@id='salary']"
+    },
+    "rf_Department":{
+        "selector":"//*[@id='department']"
+    },
+    "rf_Submit":{
+        "selector":"//*[@id='submit']"
+    },
+    "buttons":{
+        "selector":"//*[@id='item-4']//span[contains(text(),'Buttons')]"
+    },
+    "dbClickButton":{
+        "selector":"//*[@id='doubleClickBtn']"
+    },
+    "rightClick":{
+        "selector":"//*[@id='rightClickBtn']"
+    },
+    "singleClick":{
+        "selector":"(//div[@class='mt-4']/button[contains(text(),'Click Me')])[2]"
+    },
+    "links":{
+        "selector":"//*[@id='item-5']//span[contains(text(),'Links')]"
+    },
+    "homeLink":{
+        "selector":"//*[@id='simpleLink']"
+    },
+    "uploadAndDownload":{
+        "selector":"//*[@id='item-7']//span[contains(text(),'Upload and Download')]"
+    },
+    "download":{
+        "selector":"//*[@id='downloadButton']"
+    },
+    "uploadFile":{
+        "selector":"//*[@id='uploadFile']"
+    }
+
+
+    
+
+
+
+    }
+    
+}
