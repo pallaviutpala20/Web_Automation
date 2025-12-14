@@ -1,6 +1,7 @@
 import{Page,expect} from '@playwright/test'
 import{default as locators} from '../../resources/webElements/locators.json'
-const path = "C:\\Users\\PALLAVI\\Documents\\Workspace\\Web_Automation\\resources\\fileuploads\\sampleFile.jpeg";
+import path from 'path';
+
 
 
 
@@ -93,13 +94,28 @@ export class Elements{
         
     }
     async downloadandUpload(){
-        await this.page.locator(this.objectRepository.WebElements.uploadAndDownload.selector).click()
-        const [download]=await Promise.all([
-            this.page.waitForEvent('download'),
-            this.page.locator(this.objectRepository.WebElements.download.selector).click()
+        await this.page.locator(this.objectRepository.WebElements.uploadAndDownload.selector).click();
 
-        ])
-        await download.saveAs('downloads/DummyFile.jpeg')
-        await this.page.locator(this.objectRepository.WebElements.uploadFile.selector).setInputFiles(path);
+        const [download] = await Promise.all([
+        this.page.waitForEvent('download'),
+        this.page.locator(this.objectRepository.WebElements.download.selector).click()
+    ]);
+
+    // Save download inside project folder
+    const downloadPath = path.join(process.cwd(), 'downloads', 'DummyFile.jpeg');
+    await download.saveAs(downloadPath);
+
+    // Upload file using relative path
+    const uploadFilePath = path.join(
+        process.cwd(),
+        'resources',
+        'fileuploads',
+        'sampleFile.jpeg'
+    );
+
+    await this.page
+        .locator(this.objectRepository.WebElements.uploadFile.selector)
+        .setInputFiles(uploadFilePath);
     }
+        
 }
